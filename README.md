@@ -11,11 +11,12 @@
 ## まず読む資料
 1. [00 設計理念・可変操作・ユーザー体験](docs/00-VISION-AND-PRINCIPLES.md)
 2. [10 参考MOD/OSSの研究アトラス（出典・教訓）](docs/10-RESEARCH-ATLAS.md)
-3. [20 世界・外交・研究・戦闘群・海軍・地図の構造案](docs/20-SYSTEM-ARCHITECTURE.md)
-4. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
-5. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-6. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-7. [60 旧にーくらエンジンの思想を継ぐための受け皿](docs/60-LEGACY-ENGINE-IMPORT.md)
+3. [11 既存MODの実装手法・失敗例のケーススタディ](docs/11-IMPLEMENTATION-CASE-STUDIES.md)
+4. [20 世界・外交・研究・戦闘群・海軍・地図の構造案](docs/20-SYSTEM-ARCHITECTURE.md)
+5. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
+6. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+7. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+8. [60 旧にーくらエンジンの思想を継ぐための受け皿](docs/60-LEGACY-ENGINE-IMPORT.md)
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
