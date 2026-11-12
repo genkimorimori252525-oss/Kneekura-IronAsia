@@ -16,7 +16,14 @@
 5. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
 6. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
 7. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-8. [60 旧にーくらエンジンの思想を継ぐための受け皿](docs/60-LEGACY-ENGINE-IMPORT.md)
+8. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+9. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+10. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+
+## 旧KneekuraEngineの確認
+2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
+
+**思想のみを新規再設計に継承**し、旧ZIP・個人設定・旧コードはリポに同梱しない。重複定義や更新間隔の不整合など静的に確認した課題は [61監査](docs/61-LEGACY-ARCHIVE-AUDIT.md) に整理した。現行版でのゲーム動作は未検証。
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
