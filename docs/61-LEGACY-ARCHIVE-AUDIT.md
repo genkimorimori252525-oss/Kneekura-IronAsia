@@ -5,7 +5,7 @@
 ## 原本の同定と完全性
 - 提供ファイル: `KneekuraEngine.zip` （チャット添付）。
 - SHA-256: `de5eaaad7bf320a4f845e482ddeb2c42dd87be9d7757fd9f672de66c1895fbd0`
-- 圧縮ファイル 351 KiB相当（実測 351K 表示）、展開後総サイズ 1,136,014 bytes、124ファイル（ディレクトリ除外）。
+- 圧縮ファイル 358,840 bytes（約350.4 KiB）、展開後総サイズ 1,136,014 bytes、124ファイル（ディレクトリ除外）。
 - 内訳: 71 × `.txt`（ゲーム定義）、32 × `.yml`（日本語/英語表示）、11 × `.py`（ローカライズ生成ツール）、ほか `descriptor.mod`、Lua、GUI、画像、IDE設定など。
 - `descriptor.mod`: `name = "KneekuraEngine"`、`supported_version = "1.15.*"`。現在のゲーム版との互換性は未検証。
 - 原本の中には `.idea` と `.claude/settings.local.json` など開発環境ファイルも含まれる。**旧ZIPを公開リポジトリへそのまま登録しない。** 原本は検証用として所有者が保管する。
@@ -14,7 +14,7 @@
 
 | 旧サブシステム・主な実在ファイル | 実装上の特徴（静的確認） | 採取する設計思想 | 結論 |
 |---|---|---|---|
-| `common/scripted_effects/KE_grievance_effects.txt`、`KE_opinion_modifiers.txt`（実際は `common/opinion_modifiers/KE_opinion_modifiers.txt`）、`common/decisions/KE_reconciliation_decisions.txt` | 二国間の怨恨 `KE_grievance@TAG`、戦争被害 `KE_war_damage@TAG`、和解 `KE_reconciliation@TAG`、直近緊張 `KE_recent_tension@TAG`。違う減衰率・係争領土・和解の影響を組み合わせる | 短期の事件と長期の歴史的記憶を区別。二国間の関係には複数の要因がある | **思想を強く継承**、保存構造と更新方法は再設計 |
+| `common/scripted_effects/KE_grievance_effects.txt`、`common/opinion_modifiers/KE_opinion_modifiers.txt`、`common/decisions/KE_reconciliation_decisions.txt` | 二国間の怨恨 `KE_grievance@TAG`、戦争被害 `KE_war_damage@TAG`、和解 `KE_reconciliation@TAG`、直近緊張 `KE_recent_tension@TAG`。違う減衰率・係争領土・和解の影響を組み合わせる | 短期の事件と長期の歴史的記憶を区別。二国間の関係には複数の要因がある | **思想を強く継承**、保存構造と更新方法は再設計 |
 | `common/decisions/KE_provocation_decisions.txt`、`events/KE_provocation_events.txt` | 国境事件、領空侵犯などの段階的挑発と外交反応 | 危機の増幅/抑制が外交へ連鎖 | 採用候補。対立の原因と解決経路を明示 |
 | `common/scripted_effects/KE_autoresearch_effects.txt`、`common/decisions/KE_autoresearch_decisions.txt` | 月次で「研究枠数×30」を独自ポイントに積算、閾値を超えると `set_technology` で技術付与。ON/OFFで進捗変数を残す。研究先は長い固定優先順位 | プレイヤー研究の自動・手動切替。ポイントの端数繰越 | **目的を継承し方式を刷新**。標準研究枠の自動投入を意味しない |
 | `common/scripted_effects/KE_development_effects.txt` | 世界発展水準、国家発展指標、陸空海の近代化を三層化。産業/戦争/訓練で変動 | 自然な国家発展と専門化、小国の成長 | 概念を継承、指標の責務と重複を整理 |
@@ -52,6 +52,12 @@
 - `common/scripted_effects/KE_development_effects.txt:32-82`: 世界技術水準の産業指標を米国または代替大国に依存。世界水準の代理指標の妥当性要検証。
 - `common/on_actions/KE_on_actions.txt` には `on_annex` や `on_capitulate` 専用のクリーンアップ定義が見つからなかった。国家消滅時の外交案件・議決・参照が全処理経路で安全かを確認する必要がある（存在しない＝必ず故障する、とは断言しない）。
 - Scripted Effects、イベント、AI戦略、decisions、YML、Python生成器が相互参照。単純なファイルコピーでは新設計に不要な結合が残る。
+
+### LEG-RISK-006: 戦争期間フラグは即時セットされている（静的に確認）
+- `common/on_actions/KE_on_actions.txt:279-283,305-309` では、宣戦布告時に `KE_war_year_1`、`KE_war_year_2`、`KE_war_year_4` をそれぞれ365/730/1460日有効として**同時に立てている**。
+- 一方、`common/scripted_effects/KE_peace_effects.txt:26-39` では `KE_war_year_4` の存在を最優先で判定して長期戦による疲弊増加を適用する。
+- もし時間経過のフラグとして使っている意図なら、**最初の月から「4年戦争」の加点を受ける**という逆転が起き得る。実機での発火と定義の衝突状況は未確認だが、意図とコードの明白な食い違いとして再設計対象にする。
+- 新設計では戦争の**経過日数**を明示的に検証可能な形で評価する。タイムアウトフラグを経過年数と取り違えない。
 
 ## 新リポジトリへの移植方針
 1. **思想を読む**: 履歴と因果、差異ある国家関係、段階的外交、研究/軍の省力化、長期的世界進展。
