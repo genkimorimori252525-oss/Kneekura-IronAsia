@@ -23,11 +23,12 @@
 12. [28 人材・平時経済・軍組織の変化と国家の盛衰](docs/28-HUMAN-CAPITAL-PEACETIME-AND-INSTITUTIONAL-CHANGE.md)
 13. [29 WW2の戦略的な面白さを戦後に続けるキャンペーン循環](docs/29-WARTIME-ENGAGEMENT-LONG-CAMPAIGN-LOOP.md)
 14. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
-15. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-16. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-17. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
-18. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
-19. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+15. [31 史実から抽出する外交・同盟・危機・経済の因果モデル](docs/31-HISTORICAL-CAUSAL-ATLAS.md)
+16. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+17. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+18. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+19. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+20. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
 ## 旧KneekuraEngineの確認
 2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
@@ -48,6 +49,9 @@ Redditや公式2025年陣営改革を踏まえ、[長期プレイ調査](docs/12
 
 ## WW2の緊迫感を戦後にも継ぐ設計（2026-11-14追加）
 [29 戦略的な競争と戦争品質の継続ループ](docs/29-WARTIME-ENGAGEMENT-LONG-CAMPAIGN-LOOP.md)を追加。世界大戦を日付で定期発生させるのではなく、利害対立→外交/再軍備→危機→必要なら戦争→講和/復興→新秩序をゲーム状態から生成。敵AIの補給/生産/戦域の意思決定も重視し、無料のAI工場・師団を追加して難易度を偽装しない。現段階は設計・実機未検証。
+
+## 史実の出来事でなく因果をモデル化（2026-11-14）
+[31 Historical Causal Atlas](docs/31-HISTORICAL-CAUSAL-ATLAS.md) に1919–1991年の歴史的経路（連盟の成否、戦後の同盟再編、非同盟、スエズ危機、キューバ危機、米中関係、資源禁輸、脱植民地化、ソ連崩壊）を出典つきで分析。**強制年代イベント・戦争件数ノルマ・プレイヤーに応じた人工敵生成は禁止**。複数の反実仮想で検証する。
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
