@@ -13,6 +13,9 @@
 - [28 人材と平時発展](28-HUMAN-CAPITAL-PEACETIME-AND-INSTITUTIONAL-CHANGE.md)
 - [62 旧エンジン外交・戦争思想](62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
+## 史実に立脚した因果・反実仮想の基線（2026-11-14）
+戦争前後の国益と国家の変化を「年表イベント」でなく、史実事例から抽出した因果メカニズムとして扱う。事例・出典・反実仮想シナリオは [31 Historical Causal Atlas](31-HISTORICAL-CAUSAL-ATLAS.md) に集約する。連盟が成功する道、同盟内の不一致、非同盟、資源外交、軍縮、旧敵間の国交改善も成立する必要がある。
+
 ## 1. プレイヤー体験の中核：因果的な戦略サイクル
 ```text
 [戦争後の安全保障・講和・復興]
