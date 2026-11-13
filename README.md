@@ -20,12 +20,13 @@
 9. [25 研究自動化・技術伝播・戦後技術の統合設計](docs/25-RESEARCH-POLICY-AND-LONG-HORIZON.md)
 10. [26 技術力システムの実証・バランス試験](docs/26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)
 11. [27 技術研究後の産業・装備更新・国際標準化アイデア](docs/27-TECH-ADOPTION-AND-INDUSTRIAL-CONTINUITY-IDEAS.md)
-12. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
-13. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-14. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-15. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
-16. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
-17. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+12. [28 人材・平時経済・軍組織の変化と国家の盛衰](docs/28-HUMAN-CAPITAL-PEACETIME-AND-INSTITUTIONAL-CHANGE.md)
+13. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
+14. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+15. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+16. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+17. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+18. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
 ## 旧KneekuraEngineの確認
 2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
@@ -40,6 +41,9 @@ Redditや公式2025年陣営改革を踏まえ、[長期プレイ調査](docs/12
 
 ## 技術力/研究のゼロベース設計（2026-11-14追加）
 旧エンジンの「世界floor・国家発展0〜100・陸海空近代化0〜100・固定自動研究」を無条件移植しない。新しい[24 技術力](docs/24-TECHNOLOGICAL-CAPABILITY-REFOUNDATION.md)、[25 研究方針・技術伝播](docs/25-RESEARCH-POLICY-AND-LONG-HORIZON.md)、[26 POC](docs/26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)を正本とする。**世界最先端・一般化した知識・国別研究能力・生産への普及・実戦運用を区別**し、研究枠の少ない国にも専門化の道を残す。まだ実ゲーム未実装。
+
+## 人材・平時の国家発展（2026-11-14追加候補）
+[28 人材形成・民需経済・組織文化と国家の盛衰](docs/28-HUMAN-CAPITAL-PEACETIME-AND-INSTITUTIONAL-CHANGE.md)を調査候補として追加。技術研究と工業/人材をつなぎ、軍需一辺倒ではない平時発展を考える。ただし既存ドクトリン熟練度やParadox検討中の新機構との重複を避ける。未実装。
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
