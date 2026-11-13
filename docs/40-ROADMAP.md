@@ -29,6 +29,12 @@
 - 軍縮/予備役・軍需維持、再動員とパフォーマンスをバニラ比較。
 - スクリプト上の制約が分かるまで「自動和平」「完全な独立AI外交」を実装済みとみなさない。
 
+### Tech Capacity & Research（追加 2026-11-14）
+- 旧KneekuraEngineの`KE_development_effects.txt`と`KE_autoresearch_effects.txt`の数値モデルを廃棄する前提で[24 技術力構造](24-TECHNOLOGICAL-CAPABILITY-REFOUNDATION.md)・[25 自動研究/技術伝播/戦後](25-RESEARCH-POLICY-AND-LONG-HORIZON.md)を参照する。
+- 最初に内陸小国/工業小国/研究大国で技術の先端・普及・生産能力を別々に実験。世界最低値だけで艦船能力が付く旧設計を採用しない。
+- プレイヤー研究枠を直接自動割当できるかはPOCで調査。無理ならポイント進捗と推奨UIを比較し、無料二重研究を禁止。
+- 将来技術の有限世代/特殊計画・DLC互換/研究・生産/戦後の継続性を[26 実証マトリクス](26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)で測る。
+
 ## Phase 3: Selective Autonomy
 - 研究方針と技術の段階進展、小国向け進展の仕組みをバランス検証。
 - 戦闘群のモード・将軍技能とAI行動の差の検証。プレイヤー軍の直接AI操作が無理なら仕様を透明に調整。
