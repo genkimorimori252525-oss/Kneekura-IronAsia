@@ -19,12 +19,13 @@
 8. [24 技術力システムのゼロベース再設計](docs/24-TECHNOLOGICAL-CAPABILITY-REFOUNDATION.md)
 9. [25 研究自動化・技術伝播・戦後技術の統合設計](docs/25-RESEARCH-POLICY-AND-LONG-HORIZON.md)
 10. [26 技術力システムの実証・バランス試験](docs/26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)
-11. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
-12. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-13. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-14. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
-15. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
-16. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+11. [27 技術研究後の産業・装備更新・国際標準化アイデア](docs/27-TECH-ADOPTION-AND-INDUSTRIAL-CONTINUITY-IDEAS.md)
+12. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
+13. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+14. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+15. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+16. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+17. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
 ## 旧KneekuraEngineの確認
 2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
