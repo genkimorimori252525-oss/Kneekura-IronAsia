@@ -16,12 +16,15 @@
 5. [20 世界・外交・研究・戦闘群・海軍・地図の構造案](docs/20-SYSTEM-ARCHITECTURE.md)
 6. [21 史実の国際連盟・国連制度と時代別の理事会構成](docs/21-HISTORICAL-INSTITUTIONS.md)
 7. [22 動的な国際秩序・常任/非常任議席と改革の設計](docs/22-DYNAMIC-WORLD-ORDER-DESIGN.md)
-8. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
-9. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-10. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-11. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
-12. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
-13. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+8. [24 技術力システムのゼロベース再設計](docs/24-TECHNOLOGICAL-CAPABILITY-REFOUNDATION.md)
+9. [25 研究自動化・技術伝播・戦後技術の統合設計](docs/25-RESEARCH-POLICY-AND-LONG-HORIZON.md)
+10. [26 技術力システムの実証・バランス試験](docs/26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)
+11. [30 実現性マトリクス・POC・失敗時の扱い](docs/30-FEASIBILITY-RISKS.md)
+12. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+13. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+14. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+15. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+16. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
 ## 旧KneekuraEngineの確認
 2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
@@ -33,6 +36,9 @@
 
 ## 長期プレイとコミュニティ調査（2026-11-14）
 Redditや公式2025年陣営改革を踏まえ、[長期プレイ調査](docs/12-LONGEVITY-COMMUNITY-RESEARCH-2026.md)で「陣営が理由を持って結束・改革・脱退する」「戦争を必ず全面降伏まで続けない」「平時軍縮・再軍備」「国家方針枯渇後の継続課題」「地域別脅威」「自動化」を整理。**既存の陣営ルール等を無駄に再実装しない。実装可否はPOC待ち。**
+
+## 技術力/研究のゼロベース設計（2026-11-14追加）
+旧エンジンの「世界floor・国家発展0〜100・陸海空近代化0〜100・固定自動研究」を無条件移植しない。新しい[24 技術力](docs/24-TECHNOLOGICAL-CAPABILITY-REFOUNDATION.md)、[25 研究方針・技術伝播](docs/25-RESEARCH-POLICY-AND-LONG-HORIZON.md)、[26 POC](docs/26-TECHNOLOGY-EXPERIMENT-AND-BALANCE.md)を正本とする。**世界最先端・一般化した知識・国別研究能力・生産への普及・実戦運用を区別**し、研究枠の少ない国にも専門化の道を残す。まだ実ゲーム未実装。
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
