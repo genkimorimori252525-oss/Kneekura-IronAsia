@@ -26,7 +26,7 @@
 15. [31 史実から抽出する外交・同盟・危機・経済の因果モデル](docs/31-HISTORICAL-CAUSAL-ATLAS.md)
 16. [32 速報と任意新聞ボックスの報道・記事履歴設計](docs/32-WORLD-NEWSROOM-DESIGN.md)
 17. [33 軍需生産・新型航空機・巨大艦建造の噂と情報精度](docs/33-PRESS-INTELLIGENCE-AND-INDUSTRIAL-RUMORS.md)
-16. [32 HOI4式の速報と任意閲覧の新聞ボックス](docs/32-MEDIA-BREAKING-NEWS-AND-NEWSPAPER-UX.md)
+18. [34 戦域司令部への委譲・戦術オート実現性](docs/34-DELEGATED-COMMAND-AND-TACTICAL-AUTONOMY.md)
 18. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
 19. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
 20. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
@@ -64,6 +64,9 @@ Redditや公式2025年陣営改革を踏まえ、[長期プレイ調査](docs/12
 
 ## 新聞の情報密度（2026-11-14追加）
 [33 軍需と技術/造船の不完全情報に基づく新聞設計](docs/33-PRESS-INTELLIGENCE-AND-INDUSTRIAL-RUMORS.md)では工場・軍艦・航空機・軍備/研究の兆候と噂を記事化。公開事実・政府発表・観測・推測を区別し、外国の秘密を無条件に見抜かない。高密度な記事を新聞ボックスへ随時蓄積するが、**従来通り強制表示は重大速報のみ**。記事の詳細取得可能性は実ゲームPOC待ち。
+
+## 司令官へ戦域を任せる戦術オート（2026-11-16設計）
+[34 Delegated Command](docs/34-DELEGATED-COMMAND-AND-TACTICAL-AUTONOMY.md)に最高司令部→元帥→将軍→師団の権限委譲、戦域/軍単位のAUTO/ASSIST/MANUAL、作戦目的・制約・補給・防衛優先・進捗報告を定義。**国家AIの強化とプレイヤー配下の部分委譲を混同しない**。既存AIFCの援用可能性とプレイヤー軍への発令API・手動命令保護を最優先POCとする。現状、実ゲーム未実証。
 
 ## 重点テーマ
 - 国際連盟、戦後の国際連合など時代に沿った制度・国際秩序の変化
