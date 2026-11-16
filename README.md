@@ -27,11 +27,11 @@
 16. [32 速報と任意新聞ボックスの報道・記事履歴設計](docs/32-WORLD-NEWSROOM-DESIGN.md)
 17. [33 軍需生産・新型航空機・巨大艦建造の噂と情報精度](docs/33-PRESS-INTELLIGENCE-AND-INDUSTRIAL-RUMORS.md)
 18. [34 戦域司令部への委譲・戦術オート実現性](docs/34-DELEGATED-COMMAND-AND-TACTICAL-AUTONOMY.md)
-18. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
-19. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
-20. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
-21. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
-22. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
+19. [40 小さく実証する開発ロードマップ](docs/40-ROADMAP.md)
+20. [50 セーブ・歴史・外部JSONのデータ契約](docs/50-DATA-AND-HISTORY.md)
+21. [60 旧にーくらエンジンの原本確認と思想継承](docs/60-LEGACY-ENGINE-IMPORT.md)
+22. [61 所有者提供ZIPの静的監査・具体的な設計上の問題](docs/61-LEGACY-ARCHIVE-AUDIT.md)
+23. [62 旧思想を新IronAsiaへ引き継ぐ再設計計画](docs/62-LEGACY-TO-IRONASIA-MIGRATION.md)
 
 ## 旧KneekuraEngineの確認
 2026-11-12にユーザー提供の `KneekuraEngine.zip` を受領・静的解析。旧MODはHOI4 1.15系向けと記載され、歴史的怨恨/和解、国際秩序、和平交渉、技術開発、自動研究、平時軍備や同盟指令などを実装しようとしていた。
@@ -57,7 +57,7 @@ Redditや公式2025年陣営改革を踏まえ、[長期プレイ調査](docs/12
 [31 Historical Causal Atlas](docs/31-HISTORICAL-CAUSAL-ATLAS.md) に1919–1991年の歴史的経路（連盟の成否、戦後の同盟再編、非同盟、スエズ危機、キューバ危機、米中関係、資源禁輸、脱植民地化、ソ連崩壊）を出典つきで分析。**強制年代イベント・戦争件数ノルマ・プレイヤーに応じた人工敵生成は禁止**。複数の反実仮想で検証する。
 
 ## 速報・新聞・歴史履歴の一体設計（2026-11-14追加）
-[32 Media & Newsroom](docs/32-MEDIA-BREAKING-NEWS-AND-NEWSPAPER-UX.md)に、重大な世界事件をHOI4式の速報ポップアップで自動配信し、緊急性の低い外交・軍拡・経済・技術・国際秩序の変化や兆候を任意閲覧の新聞ボックスに蓄積する設計を追加。報道はゲームで実際に起きた公開事実に基づき、観測情報と論評・未確認情報を区別。現時点は仕様とPOC、ゲーム未実装。
+[32 Media & Newsroom](docs/32-WORLD-NEWSROOM-DESIGN.md)に、重大な世界事件をHOI4式の速報ポップアップで自動配信し、緊急性の低い外交・軍拡・経済・技術・国際秩序の変化や兆候を任意閲覧の新聞ボックスに蓄積する設計を追加。報道はゲームで実際に起きた公開事実に基づき、観測情報と論評・未確認情報を区別。現時点は仕様とPOC、ゲーム未実装。
 
 ## 世界の報道UI（2026-11-14追加）
 [32 World Newsroom](docs/32-WORLD-NEWSROOM-DESIGN.md): 重大事件はHOI4式の自動速報、軍事/外交の兆候やその他記事は自由に開く新聞ボックスへ。速報も後から新聞で読み返せる。戦争が拡大してもポップアップの連続発生を防ぎ、史実/推測/政府発表を区別する。現行HOI4でのカスタムUI・通知制御はPOC待ち。
